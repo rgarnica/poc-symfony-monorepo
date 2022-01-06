@@ -20,6 +20,8 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ],
     ]);
 
+    $parameters->set(Option::DEFAULT_BRANCH_NAME, 'main');
+
     $services = $containerConfigurator->services();
 
     // release workers - in order to execute
