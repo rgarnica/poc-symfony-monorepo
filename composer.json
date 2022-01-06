@@ -1,4 +1,5 @@
 {
+    "name": "poc-symfony-monorepo",
     "type": "project",
     "license": "proprietary",
     "require": {
