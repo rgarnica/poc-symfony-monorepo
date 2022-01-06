@@ -1,10 +1,8 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": "^7.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.4",
@@ -17,12 +15,14 @@
         "sensio/framework-extra-bundle": "^6.1",
         "symfony/asset": "5.4.*",
         "symfony/console": "5.4.*",
+        "symfony/dependency-injection": "^5.0",
         "symfony/dotenv": "5.4.*",
         "symfony/expression-language": "5.4.*",
         "symfony/flex": "^1.17|^2",
         "symfony/form": "5.4.*",
         "symfony/framework-bundle": "5.4.*",
         "symfony/http-client": "5.4.*",
+        "symfony/http-kernel": "^5.0",
         "symfony/intl": "5.4.*",
         "symfony/mailer": "5.4.*",
         "symfony/mime": "5.4.*",
@@ -52,7 +52,8 @@
         "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^6.0",
         "symfony/stopwatch": "5.4.*",
-        "symfony/web-profiler-bundle": "5.4.*"
+        "symfony/web-profiler-bundle": "5.4.*",
+        "symplify/monorepo-builder": "^10.0"
     },
     "config": {
         "allow-plugins": {
@@ -68,7 +69,9 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "YourMonorepo\\FirstPackage\\": "packages/first-package/src",
+            "YourMonorepo\\SecondPackage\\": "packages/second-package/src"
         }
     },
     "autoload-dev": {
@@ -79,7 +82,9 @@
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
+        "symfony/polyfill-php72": "*",
+        "your-monorepo/first-package": "self.version",
+        "your-monorepo/second-package": "self.version"
     },
     "scripts": {
         "auto-scripts": {
@@ -101,5 +106,7 @@
             "allow-contrib": false,
             "require": "5.4.*"
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
