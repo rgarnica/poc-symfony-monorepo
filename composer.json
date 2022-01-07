@@ -1,5 +1,5 @@
 {
-    "name": "poc-symfony-monorepo",
+    "name": "rgarnica/poc-symfony-monorepo",
     "type": "project",
     "license": "proprietary",
     "require": {
@@ -71,7 +71,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "YourMonorepo\\FirstPackage\\": "packages/first-package/src",
+            "YourMonorepo\\FirstPackage\\": "packages/first-package",
             "YourMonorepo\\SecondPackage\\": "packages/second-package/src"
         }
     },
