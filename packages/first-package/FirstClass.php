@@ -12,4 +12,9 @@ final class FirstClass
         return 'first class';
     }
 
+    public function executeSecondStep(): string
+    {
+        return 'first class - second step';
+    }
+
 }
