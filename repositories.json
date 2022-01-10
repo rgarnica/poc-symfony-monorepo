@@ -2,5 +2,9 @@
   {
     "path": "packages/first-package",
     "repo": "git@github.com:rgarnica/first-package.git"
+  },
+  {
+    "path": "packages/second-package",
+    "repo": "git@github.com:rgarnica/second-package.git"
   }
 ]
