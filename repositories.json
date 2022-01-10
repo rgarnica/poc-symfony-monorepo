@@ -1,0 +1,6 @@
+[
+  {
+    "path": "packages/first-package",
+    "repo": "git@github.com:rgarnica/first-package.git"
+  }
+]
