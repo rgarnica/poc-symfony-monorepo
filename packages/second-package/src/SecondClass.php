@@ -8,6 +8,6 @@ final class SecondClass
 {
     public function execute(): string
     {
-        return 'second class';
+        return 'second class - changed';
     }
 }
