@@ -6,4 +6,8 @@ namespace YourMonorepo\SecondPackage;
 
 final class SecondClass
 {
+    public function execute(): string
+    {
+        return 'second class';
+    }
 }
