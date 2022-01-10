@@ -4,7 +4,6 @@
 # in a second repository.
 #
 set -eu
-ARG1=0.3
 
 # command -v splitsh-lite >/dev/null 2>&1 || { echo "$0 requires splitsh-lite but it's not installed.  Aborting." >&2; exit 1; }
 
@@ -25,7 +24,6 @@ do
   # shellcheck disable=SC2002
   temp_branch=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 30 | head -n 1)
 
-  echo "hey"
   echo $temp_branch
 
   # Checkout the old repository, make it safe and checkout a temp branch
